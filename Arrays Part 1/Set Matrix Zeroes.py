@@ -25,6 +25,6 @@ class Solution:
             for r in range(rows):
                 matrix[r][0]=0
 
-            if rowZero:
-                for c in range(cols):
-                    matrix[0][c] = 0
+        if rowZero:
+            for c in range(cols):
+                matrix[0][c] = 0
