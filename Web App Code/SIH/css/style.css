@@ -1,0 +1,508 @@
+.body::-webkit-scrollbar-thumb {
+  background-color: #3498db; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+.hero {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+}
+.hero #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.hero .content {
+  flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 1;
+}
+.hero .image {
+  flex: 1 1 40rem;
+  z-index: 1;
+}
+.hero .image img {
+  width: 70%;
+  margin-left: 6rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.hero .image img:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.hero .content h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #002057;
+}
+.hero .content h2 span {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #ff7b00;
+}
+.hero .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+
+#tech{
+  margin-top: 3rem;
+}
+
+video {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.colWhite {
+  color: white;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+}
+
+.vrHead{
+  color: white;
+}
+
+.popup-button {
+
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px;
+  cursor: pointer;
+  margin-top: 10rem;
+}
+.popup-button:hover{
+  transform: rotate3d(0,1,0,360deg);
+  transition-timing-function: ease-in-out;
+}
+.popup-button img{
+  background-color: whitesmoke;
+  height: 4rem;
+  width: 6rem;
+  margin: 0px;
+  padding: 0px;
+
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 20px;
+  
+}
+
+/* Style for the close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive styles for the popup */
+@media (max-width: 768px) {
+  .popup {
+    width: 100%;
+  }
+}
+
+.popBox{
+  background-color: azure;
+  height: 80vh;
+  width: 100vw; 
+
+  /* display: inline-flexbox; */
+  text-align: center;
+  
+  transition: all 36s ease-out;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  transform: scale(1.4);
+  
+}
+
+.popBox{
+ 
+ height: 70vh;
+ width: 100%;
+
+   background-image: url("../images/Tech/vr.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:center-top;
+  background-position-x: 50%;
+  background-position-y: 0%;
+  -webkit-animation: zoomin 5s 1;
+
+@-webkit-keyframes zoomin {
+  0% {
+      -webkit-transform: scale(1);
+  }
+  100% {
+      -webkit-transform: scale(2);
+  }
+}
+
+
+}
+/* #popImg:hover{
+
+  transform: scale(1.2);
+  transition: ease-in-out;
+} */
+
+
+/*   
+.splitter {
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+
+.splitter .splitter-item {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  z-index: 1
+}
+
+.splitter .splitter-item:first-child {
+  left: 0
+}
+
+.splitter .splitter-item:last-child {
+  right: 0
+}
+
+.splitter .splitter-item.active {
+  z-index: 2
+}
+
+@media (max-width: 991px) {
+  .splitter .splitter-item {
+      width:100%;
+      height: 50%
+  }
+
+  .splitter .splitter-item:first-child {
+      top: 0;
+      left: 0;
+      bottom: auto
+  }
+
+  .splitter .splitter-item:last-child {
+      top: auto;
+      right: auto;
+      left: 0;
+      bottom: 0
+  }
+} */
+/* 
+.timeline{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+} */
+.makeFlex{
+  height: 22rem;
+  width: 20rem;
+
+}
+
+
+select#dropdown {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  appearance: none; /* Remove default arrow icon in some browsers */
+}
+
+/* Style the option elements */
+select#dropdown option {
+  background-color: #fff;
+  color: #333;
+}
+select#dropdown:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+h3.text-light {
+  font-family: "Arial", sans-serif; 
+}
+select#dropdown {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  appearance: none; /* Remove default arrow icon in some browsers */
+  background-image: url('down-arrow.png'); /* Add a custom arrow icon */
+  background-repeat: no-repeat;
+  background-position: right center; /* Position the arrow to the right */
+}
+
+/* Style the option elements */
+select#dropdown option {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Style when the dropdown is focused (clicked) */
+select#dropdown:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+h2.text-center {
+  color: rgb(65, 124, 234); /* Change to your preferred color */
+  font-family: "Arial", sans-serif; /* Change to your preferred font */
+  font-size: 32px; /* Adjust the font size as needed */
+  letter-spacing: 2px; /* Add letter spacing for emphasis */
+  text-decoration: underline; /* Keep the underline style */
+  margin-bottom: 20px; /* Add space below the header */
+}
+.custom-text {
+  color: #ff5733; /* Change to your preferred color */
+  font-family: "Helvetica Neue", sans-serif; /* Change to your preferred font */
+  font-size: 20px; /* Adjust the font size as needed */
+  letter-spacing: 1px; /* Add letter spacing for emphasis */
+  text-decoration: underline; /* Add an underline */
+  text-transform: uppercase; /* Convert text to uppercase */
+}
+.custom-text1 {
+  color: #ff5733; /* Change to your preferred color */
+  font-family: "Helvetica Neue", sans-serif; /* Change to your preferred font */
+  font-size: 20px; /* Adjust the font size as needed */
+  letter-spacing: 1px; /* Add letter spacing for emphasis */
+  /* text-decoration: underline; Add an underline */
+  text-transform: uppercase; /* Convert text to uppercase */
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+.card {
+  width: 1100px;
+  height: 350px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* padding-top: 5%; */
+}
+.section {
+  padding: 10px;
+  padding-bottom: 5%; /* Adjusted padding */
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex-basis: 23%;
+  background-color: #fff;
+  /* border: 1px solid #ddd; */
+  padding: 5px;
+  text-align: center;
+}
+.hr-container11 {
+  display: flex;
+  justify-content: space-between;
+  /* margin-right: 20px; Adjust the right margin as needed */
+}
+
+.margined-line {
+  width: 90%; /* Adjust the width as needed */
+  margin-left: 5%;
+  
+}
+.custom-text4 {
+  color: #000000; /* Change to your preferred color */
+  font-family: "Helvetica Neue", sans-serif; /* Change to your preferred font */
+  font-size: 20px; /* Adjust the font size as needed */
+  letter-spacing: 1px; /* Add letter spacing for emphasis */
+  /* text-decoration: underline; Add an underline */
+  padding-left: 2%;
+  text-transform: uppercase; /* Convert text to uppercase */
+}
+.custom-text5 {
+  color: rgb(65, 124, 234);/* Change to your preferred color */
+  font-family: "Helvetica Neue", sans-serif; /* Change to your preferred font */
+  font-size: 23px; /* Adjust the font size as needed */
+  letter-spacing: 1px; /* Add letter spacing for emphasis */
+  /* text-decoration: underline; Add an underline */
+  padding-left: 7%;
+  text-transform: uppercase; /* Convert text to uppercase */
+  padding-top: 5%;
+  text-decoration: underline;
+}
+.cards-container11 {
+  display: flex;
+  justify-content: space-between;
+  perspective: 1000px;
+}
+
+.card11 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  margin-right: 50px;
+  margin-left: 5px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #3498db, #e74c3c);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Arial, sans-serif;
+ }
+
+.card11:last-child {
+  margin-right: 0; /* Remove margin for the last card */
+}
+
+.card11:hover {
+  transform: rotateY(180deg);
+}
+
+.card-front11,
+.card-back11{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: #3498db; /* Front and back card background color */
+  color: white;
+}
+
+.card-back11 {
+  transform: rotateY(180deg);
+  background: linear-gradient(45deg, #8b6a67, #83b9de);
+}
+.text-container11 {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); /* Center the text container */
+  background: linear-gradient(to bottom right, #87CEEB, #98FB98);
+  padding: 20px;
+  color: #000;
+  font-size: 24px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  max-height: 220px; /* Adjust the maximum height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  cursor: pointer;
+}
+.text-container11:active {
+  cursor: grabbing; /* Change cursor on click-and-drag */
+}
+.text-container11::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+.text-container11::-webkit-scrollbar-thumb {
+  background-color: #3498db; /* Color of the scrollbar thumb */
+ border-radius: 4px; 
+ }
+.piche::after{
+  content: "\a";
+  overflow: hidden;
+  white-space: pre;
+  text-align: center;
+  color: #000000 !important;
+}
+.niche::before{
+  content: "\a";
+  overflow: hidden;
+  white-space: pre;
+  text-align: center;
+  color: #000000 ;
+}
+.piche-line-break::after {
+  text-align: left;
+  content:"\a" ;
+  white-space: pre;
+}
+.move{
+  align-items: center;
+}
+.center-text1 {
+  text-align: justify;
+}
+.featured-number{
+  text-align:center ;
+}
+.alg{
+  align-items: center;
+}
+#background-section {
+  background-image: url('images\Tech\pexels-vanessa-loring-7869249.jpg'); /* Replace 'your-image.jpg' with the path to your image file */
+  background-size: cover; /* This property ensures the image covers the entire background of the section */
+}
